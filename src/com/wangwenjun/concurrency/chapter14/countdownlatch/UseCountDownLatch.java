@@ -30,7 +30,7 @@ public class UseCountDownLatch {
             },String.valueOf(i)).start();
         }
 
-        countDownLatch.await();//阻止直到计数器为0才执行
+        countDownLatch.await();//阻塞直到计数器为0才执行
         System.out.println("end");
 
     }

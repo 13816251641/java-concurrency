@@ -17,6 +17,7 @@ import java.util.concurrent.CyclicBarrier;
  * 被直接打断的线程抛InterruptedException;
  * 其余的线程抛因为打翻栅栏操作而被唤醒则抛出异常:BrokenBarrierException
  * 整盘游戏结束
+ * cyclicBarrier.await()
  *
  */
 public class UseCyclicBarrier {
