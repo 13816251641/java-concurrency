@@ -16,6 +16,9 @@ import java.util.concurrent.CountDownLatch;
  * 2.countDownLatch.await() 等待计数器归零,然后再向下执行,会阻塞
  * 3.完全可以在一个线程内countDown两次
  * 4.CountDownLatch中委托给了内部类syn,而这个内部类实现了AQS,所以本身就是安全的,在多线程下不需要再加锁或者是synchronizwd
+ *
+ * countDownLatch.countDown() 2个api
+ * countDownLatch.await()
  */
 public class UseCountDownLatch {
 
