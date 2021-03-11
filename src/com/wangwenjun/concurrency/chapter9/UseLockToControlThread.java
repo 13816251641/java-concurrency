@@ -11,6 +11,8 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Description: 使用lock控制线程的执行顺序
  * @Date: 2021-03-03 15:27
  * @Version: 1.0
+ *
+ * conditionA.await(); 要先获得锁
  */
 public class UseLockToControlThread {
 
@@ -78,7 +80,7 @@ class Handler{
         }catch (Exception e){
 
         }finally {
-            lock.unlock();
+           lock.unlock();
         }
     }
 
