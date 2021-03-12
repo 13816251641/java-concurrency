@@ -10,6 +10,7 @@ import java.util.concurrent.*;
  * @Date: 2021-03-11 14:26
  * @Version: 1.0
  *
+ * 4种拒绝策略
  * new ThreadPoolExecutor.AbortPolicy() //银行满了,还有人进来,不处理这个人,直接抛出异常
  * new ThreadPoolExecutor.CallerRunsPolicy() //哪来的去哪里
  * new ThreadPoolExecutor.DiscardPolicy() //队列满了,丢掉任务,不会抛出异常
