@@ -39,7 +39,7 @@ public class UseThreadPool2 {
         }catch (Exception e){
 
         }finally {
-            threadPoolExecutor.shutdown();
+            threadPoolExecutor.shutdown();//
 
         }
     }
