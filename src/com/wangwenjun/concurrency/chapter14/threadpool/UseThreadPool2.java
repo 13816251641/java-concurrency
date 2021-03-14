@@ -22,7 +22,6 @@ import java.util.concurrent.*;
 public class UseThreadPool2 {
 
     public static void main(String[] args) {
-
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(2,
                 5,
                 3,
